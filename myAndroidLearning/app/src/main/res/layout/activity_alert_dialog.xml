@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlertDialogActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/default_ad_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Default_AlertDialog"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/radio_ad_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Radio_AlertDialog"
+        android:textAllCaps="false"
+        android:layout_below="@id/default_ad_btn"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/multiply_ad_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiply_AlertDialog"
+        android:textAllCaps="false"
+        android:layout_below="@id/radio_ad_btn"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/diy_ad_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DIY_AlertDialog_ProgressBar"
+        android:textAllCaps="false"
+        android:layout_below="@id/multiply_ad_btn"
+        android:layout_marginTop="15dp"/>
+
+    <Button
+        android:id="@+id/diy_ad_btn2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DIY_AlertDialog_ProgressDialog"
+        android:textAllCaps="false"
+        android:layout_below="@id/diy_ad_btn"
+        android:layout_marginTop="15dp"/>
+
+</RelativeLayout>
