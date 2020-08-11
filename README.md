@@ -1,5 +1,4 @@
-#2020.08.10
+# 2020.08.10
 
-#Android Learning  
+## Android Learning  
 
-Second Try
