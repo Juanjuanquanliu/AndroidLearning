@@ -2,23 +2,23 @@ package com.example.myandroidlearning;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
-import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.myandroidlearning.ActivityLifeCycleTest.ActivityLifeCycleTestButtons;
+import com.example.myandroidlearning.DIY.DIYActivity;
+import com.example.myandroidlearning.ServiceLearning.MyService;
+import com.example.myandroidlearning.Views.ListView.ListViewButtonsActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button normal, dialog,progressBarBtn, progressDialogBtn,startModleBtn;
+    private Button normal, dialog,progressBarBtn, progressDialogBtn,startModleBtn,diyTitleBtn, popBtn,listViewBtn;
+    private Button startServiceBtn,stopServiceBtn, bindServiceBtn, unBindServiceBtn;
     private static final String TAG = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,7 +30,13 @@ public class MainActivity extends AppCompatActivity {
         progressBarBtn = (Button) findViewById(R.id.progress_bar_btn);
         progressDialogBtn = (Button) findViewById(R.id.progress_dialog_btn);
         startModleBtn = (Button) findViewById(R.id.start_model_btn);
-
+        diyTitleBtn = (Button) findViewById(R.id.diy_title_btn);
+        popBtn = (Button) findViewById(R.id.pop_btn);
+        listViewBtn = (Button) findViewById(R.id.list_view_btn);
+        startServiceBtn = (Button) findViewById(R.id.start_service_btn);
+        stopServiceBtn = (Button) findViewById(R.id.stop_service_btn);
+        bindServiceBtn = (Button) findViewById(R.id.bind_service_btn);
+        unBindServiceBtn = (Button) findViewById(R.id.unbind_service_btn);
         setOnclickListener();
     }
     private void setOnclickListener(){
@@ -40,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
         progressBarBtn.setOnClickListener(onclick);
         progressDialogBtn.setOnClickListener(onclick);
         startModleBtn.setOnClickListener(onclick);
+        diyTitleBtn.setOnClickListener(onclick);
+        popBtn.setOnClickListener(onclick);
+        listViewBtn.setOnClickListener(onclick);
+        startServiceBtn.setOnClickListener(onclick);
+        stopServiceBtn.setOnClickListener(onclick);
+        bindServiceBtn.setOnClickListener(onclick);
+        unBindServiceBtn.setOnClickListener(onclick);
     }
 
     @Override
@@ -94,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             Intent intent = null;
+            Intent serviceIntent = new Intent(MainActivity.this, MyService.class);
             switch (view.getId()){
                 case R.id.na_btn:
                     Toast.makeText(getApplicationContext(), "跳转到正常活动",Toast.LENGTH_SHORT).show();
@@ -112,8 +126,37 @@ public class MainActivity extends AppCompatActivity {
                     intent = new Intent(MainActivity.this, ProgressDialogActivity.class);
                     break;
                 case R.id.start_model_btn:
-                    Toast.makeText(getApplicationContext(), "跳转到对话框进度条页面",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "跳转到启动模式页面",Toast.LENGTH_SHORT).show();
                     intent = new Intent(MainActivity.this, ActivityLifeCycleTestButtons.class);
+                    break;
+                case R.id.diy_title_btn:
+                    Toast.makeText(getApplicationContext(), "跳转到自定义标题栏页面",Toast.LENGTH_SHORT).show();
+                    intent = new Intent(MainActivity.this, DIYActivity.class);
+                    break;
+                case R.id.pop_btn:
+                    Toast.makeText(getApplicationContext(), "跳转到pop页面",Toast.LENGTH_SHORT).show();
+                    intent = new Intent(MainActivity.this, PopUpWindowActivity.class);
+                    break;
+                case R.id.list_view_btn:
+                    Toast.makeText(getApplicationContext(), "跳转到List View 页面",Toast.LENGTH_SHORT).show();
+                    intent = new Intent(MainActivity.this, ListViewButtonsActivity.class);
+                    break;
+                case R.id.start_service_btn:
+                    Toast.makeText(getApplicationContext(), "启动服务",Toast.LENGTH_SHORT).show();
+
+                    startService(serviceIntent);
+                    break;
+                case R.id.stop_service_btn:
+                    Toast.makeText(getApplicationContext(), "停止服务",Toast.LENGTH_SHORT).show();
+                    stopService(serviceIntent);
+                    break;
+                case R.id.bind_service_btn:
+                    Toast.makeText(getApplicationContext(), "绑定服务",Toast.LENGTH_SHORT).show();
+                    stopService(serviceIntent);
+                    break;
+                case R.id.unbind_service_btn:
+                    Toast.makeText(getApplicationContext(), "解绑服务",Toast.LENGTH_SHORT).show();
+                    stopService(serviceIntent);
                     break;
                 default:
                     break;

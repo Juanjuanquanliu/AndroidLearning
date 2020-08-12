@@ -9,20 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ActivityLifeCycleTest.SingleInstanceActivity"
-                  android:launchMode="singleInstance"></activity>
-        <activity android:name=".ActivityLifeCycleTest.SingleTaskActivtity"
-                  android:launchMode="singleTask"/>
+        <service
+            android:name=".ServiceLearning.MyService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".Views.ListView.FruitListViewActivity" />
+        <activity android:name=".Views.ListView.SimpleListViewActivity" />
+        <activity android:name=".Views.ListView.ListViewButtonsActivity" />
+        <activity android:name=".PopUpWindowActivity" />
+        <activity android:name=".DIY.DIYActivity" />
+        <activity
+            android:name=".ActivityLifeCycleTest.SingleInstanceActivity"
+            android:launchMode="singleInstance" />
+        <activity
+            android:name=".ActivityLifeCycleTest.SingleTaskActivtity"
+            android:launchMode="singleTask" />
         <activity android:name=".DialogActivity" />
         <activity android:name=".ProgressDialogActivity" />
         <activity android:name=".ProgressBarActivity" />
         <activity android:name=".AlertDialogActivity" />
         <activity android:name=".ActivityLifeCycleTest.ActivityLifeCycleTestButtons" />
         <activity android:name=".ActivityLifeCycleTest.TestActivity" />
-        <activity android:name=".ActivityLifeCycleTest.SingleTopActivity"
-                  android:launchMode="singleTop"/>
-        <activity android:name=".ActivityLifeCycleTest.StandardStartActivity"
-                  android:launchMode="standard"/>
+        <activity
+            android:name=".ActivityLifeCycleTest.SingleTopActivity"
+            android:launchMode="singleTop" />
+        <activity
+            android:name=".ActivityLifeCycleTest.StandardStartActivity"
+            android:launchMode="standard" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
