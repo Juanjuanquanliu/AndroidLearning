@@ -30,24 +30,33 @@ public class SimpleListViewActivity extends AppCompatActivity {
 
     }
     private void initMyViewHolders(){
-        for(int i = 0; i < data.length; i++){
-            myFruit holder = new myFruit(R.drawable.apple, "apple","2020-08-10", "这是一个苹果");
+        for(int j = 0; j < 2; j++){
+            int i = 0;
+            myFruit holder = new myFruit(R.drawable.apple, data[i],"2020-08-10", "这是一个"+data[i]);
             myFruits.add(holder);
+            i++;
             holder = new myFruit(R.drawable.banana, data[i],"2020-08-10", "这是一个 "+data[i]);
+            i++;
             myFruits.add(holder);
             holder = new myFruit(R.drawable.orange, data[i],"2020-08-10", "这是一个 "+data[i]);
             myFruits.add(holder);
             holder = new myFruit(R.drawable.watermelon, data[i],"2020-08-10", "这是一个 "+data[i]);
+            i++;
             myFruits.add(holder);
             holder = new myFruit(R.drawable.pear, data[i],"2020-08-10", "这是一个 "+data[i]);
+            i++;
             myFruits.add(holder);
             holder = new myFruit(R.drawable.grape, data[i],"2020-08-10", "这是一个 "+data[i]);
+            i++;
             myFruits.add(holder);
             holder = new myFruit(R.drawable.pinneapple, data[i],"2020-08-10", "这是一个 "+data[i]);
+            i++;
             myFruits.add(holder);
             holder = new myFruit(R.drawable.strawberry, data[i],"2020-08-10", "这是一个 "+data[i]);
+            i++;
             myFruits.add(holder);
             holder = new myFruit(R.drawable.cherry, data[i],"2020-08-10", "这是一个 "+data[i]);
+            i++;
             myFruits.add(holder);
             holder = new myFruit(R.drawable.mango, data[i],"2020-08-10", "这是一个 "+data[i]);
             myFruits.add(holder);

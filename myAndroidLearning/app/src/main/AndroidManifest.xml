@@ -9,12 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Fragment.NewsFragment.NewsMainActivity"></activity>
+        <activity android:name=".Fragment.NewsFragment.NewsContentActivity" />
+        <activity android:name=".Fragment.QualifiesFragmentActivity" />
+        <activity android:name=".Views.RecyclerView.ChatBox.ChatBoxActivity" />
+        <activity android:name=".Views.RecyclerView.RecyclerGridViewActivity" />
+        <activity android:name=".Views.RecyclerView.RecyclerWaterFallViewActivity" />
+        <activity android:name=".Views.RecyclerView.RecyclerHorizentalViewActivity" />
+        <activity android:name=".Views.RecyclerView.RecyclerVerticalViewActivity" />
+        <activity android:name=".Views.RecyclerView.RecylerViewButtonsActivity" />
+        <activity android:name=".Fragment.twoPartFragmentActivity" />
+        <activity android:name=".Fragment.ContainerActivity" />
+
         <service
             android:name=".ServiceLearning.MyService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true" />
 
-        <activity android:name=".Views.ListView.FruitListViewActivity" />
+        <activity android:name=".Views.ListView.Fruit.FruitListViewActivity" />
         <activity android:name=".Views.ListView.SimpleListViewActivity" />
         <activity android:name=".Views.ListView.ListViewButtonsActivity" />
         <activity android:name=".PopUpWindowActivity" />

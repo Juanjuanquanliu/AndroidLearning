@@ -19,12 +19,24 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.myandroidlearning.Fragment.NewsFragment.NewsMainActivity" />
+        <activity android:name="com.example.myandroidlearning.Fragment.NewsFragment.NewsContentActivity" />
+        <activity android:name="com.example.myandroidlearning.Fragment.QualifiesFragmentActivity" />
+        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.ChatBox.ChatBoxActivity" />
+        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.RecyclerGridViewActivity" />
+        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.RecyclerWaterFallViewActivity" />
+        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.RecyclerHorizentalViewActivity" />
+        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.RecyclerVerticalViewActivity" />
+        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.RecylerViewButtonsActivity" />
+        <activity android:name="com.example.myandroidlearning.Fragment.twoPartFragmentActivity" />
+        <activity android:name="com.example.myandroidlearning.Fragment.ContainerActivity" />
+
         <service
             android:name="com.example.myandroidlearning.ServiceLearning.MyService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name="com.example.myandroidlearning.Views.ListView.FruitListViewActivity" />
+        <activity android:name="com.example.myandroidlearning.Views.ListView.Fruit.FruitListViewActivity" />
         <activity android:name="com.example.myandroidlearning.Views.ListView.SimpleListViewActivity" />
         <activity android:name="com.example.myandroidlearning.Views.ListView.ListViewButtonsActivity" />
         <activity android:name="com.example.myandroidlearning.PopUpWindowActivity" />
