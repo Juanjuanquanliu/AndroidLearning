@@ -144,8 +144,20 @@
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout-sw600dp/activity_news_main.xml"
     },
     {
+        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/xml_network_security_config.xml.flat",
+        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/xml/network_security_config.xml"
+    },
+    {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_activity_service_main.xml.flat",
+        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/activity_service_main.xml"
+    },
+    {
+        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_activity_downloader_main.xml.flat",
+        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/activity_downloader_main.xml"
     },
     {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_right_fragment.xml.flat",
@@ -270,6 +282,10 @@
     {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_activity_list_view_buttons.xml.flat",
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/activity_list_view_buttons.xml"
+    },
+    {
+        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_activity_update_ui.xml.flat",
+        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/activity_update_ui.xml"
     },
     {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_left_fragment.xml.flat",

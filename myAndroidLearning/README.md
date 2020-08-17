@@ -200,5 +200,85 @@ myAdapter继承RecyclerView.Adapter<myAdapter.ViewHolder>，这也意味着myAda
 
 新闻的内容设置是采用Intent传数据的方式，Intent.putExtra以及Intent.getStringExtra来进行数据交互，以及Intent的界面跳转功能，点击标题跳转到具体页面。 
 
-适配器根据设备来决定是采用哪种显示方式。 
+适配器根据设备来决定是采用哪种显示方式。
+
+# 2020.08.14
+## 学习内容
+### 1. Service深入学习 
+
+#### 1.1 多线程学习 
+
+基本就是两种方式，继承Thread或者实现Runnable接口。 
+注意：UI控件的更新只能在主线程，而不能在子线程中进行更新。 
+
+#### 1.2 异步消息处理机制 
+
+一种使用Handler进行处理，一种是使用Asynck进行处理，但是似乎两种处理方法都被弃用了。 
+
+这两者都可以在主线程对UI进行操作。 
+
+- Handler主要通过Message的发送接收来处理异步消息，handleMessge + sendMessage。 
+
+- AsyncTask四个函数是主导： 
+
+* onPreExexcute()：后台任务开始前的界面初始化操作 
+
+* doInBackground()：子线程任务执行的函数，所有后台任务在此执行 
+
+* onProgressUpdate()：参数有后台传递过来 
+
+* onPostExecute()：执行完毕后台任务后调用 
+
+ 
+
+#### 1.3 Service生命周期 
+
+Service 首先在Manifest上注册，Exported属性表示是否允许其他程序访问该服务，Enabled表示是否启用该服务。 
+
+之后，调用Service时主要依赖startService、stopService、bindService、unbindService四个函数。 
+
+Service的生命周期主要onCreate、 onStartCommond、onDestory三个函数。 
+
+- startService 会调用onCreate以及onStartCommond函数 
+
+- stopService会调用onDestory函数 
+
+- bindService 会调用onCreate函数
+
+- unbindService会调用onDestory函数
+
+ 
+
+#### 1.4 活动与服务之间的通信学习 
+
+主要是两种，一种通过Binder(),一种通过Bundle机制，还有一种是使用Intent进行通信。 
+
+ 
+
+#### 1.5 前台服务 
+
+前台服务主要是状态栏显示，主要用到了PendingIntent和Notification两个类，设置好参数以后，进行startForeground将服务设置前台显示即状态栏显示。 
+
+ 
+
+#### 1.6 IntentService 
+
+相当于一个可以创建异步且自动停止的服务，避免忘记使服务停下来或者ANR错误。IntentService类主要通过onHandleIntent函数进行操作。 
+
+ 
+
+### 2. 实现后台下载器功能 
+
+根据所学服务方面的内容，实现后台下载功能。 
+
+主要有四大块： 
+
+- 下载监听器(DownLoadListener)：接口；用于说明下载的四种状态：进行、成功、失败、暂停。 
+
+- 下载任务 (DownLoadTask) ：类，继承异步处理消息机制(AsncTask)；用于实现下载流程：定义下载位置、现在名称、下载状态对应的相应操作、下载进度等 
+
+- 下载服务 (DownLoadService) ：类，继承Service；用于前台显示以及执行下载任务类的操作。 
+
+- 下载主活动 (DownLoadMainActivity) ：活动；主要是进行按钮操作实现下载。 
+
 

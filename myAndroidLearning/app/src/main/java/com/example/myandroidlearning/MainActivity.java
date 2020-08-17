@@ -2,10 +2,15 @@ package com.example.myandroidlearning;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ComponentName;
+import android.content.Context;
+import android.content.IntentSender;
+import android.content.ServiceConnection;
 import android.content.res.Configuration;
 import android.os.Bundle;
 
 import android.content.Intent;
+import android.os.IBinder;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -13,17 +18,15 @@ import android.widget.Toast;
 
 import com.example.myandroidlearning.ActivityLifeCycleTest.ActivityLifeCycleTestButtons;
 import com.example.myandroidlearning.DIY.DIYActivity;
-import com.example.myandroidlearning.Fragment.ContainerActivity;
 import com.example.myandroidlearning.Fragment.NewsFragment.NewsMainActivity;
-import com.example.myandroidlearning.Fragment.QualifiesFragmentActivity;
-import com.example.myandroidlearning.Fragment.twoPartFragmentActivity;
 import com.example.myandroidlearning.ServiceLearning.MyService;
+import com.example.myandroidlearning.ServiceLearning.MultiThreading.UpdateUIActivity;
+import com.example.myandroidlearning.ServiceLearning.ServiceMainActivity;
 import com.example.myandroidlearning.Views.ListView.ListViewButtonsActivity;
 import com.example.myandroidlearning.Views.RecyclerView.RecylerViewButtonsActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button normal, dialog,progressBarBtn, progressDialogBtn,startModleBtn,diyTitleBtn, popBtn,listViewBtn,myFragmentBtn, recyclerViewBtn;
-    private Button startServiceBtn,stopServiceBtn, bindServiceBtn, unBindServiceBtn;
+    private Button normal, dialog,progressBarBtn, progressDialogBtn,startModleBtn,diyTitleBtn, popBtn,listViewBtn,myFragmentBtn, recyclerViewBtn, updateUIBtn,jump_to_service_btn;
     private static final String TAG = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,12 +41,10 @@ public class MainActivity extends AppCompatActivity {
         diyTitleBtn = (Button) findViewById(R.id.diy_title_btn);
         popBtn = (Button) findViewById(R.id.pop_btn);
         listViewBtn = (Button) findViewById(R.id.list_view_btn);
-        startServiceBtn = (Button) findViewById(R.id.start_service_btn);
-        stopServiceBtn = (Button) findViewById(R.id.stop_service_btn);
-        bindServiceBtn = (Button) findViewById(R.id.bind_service_btn);
-        unBindServiceBtn = (Button) findViewById(R.id.unbind_service_btn);
         myFragmentBtn = (Button) findViewById(R.id.my_fragment_btn);
         recyclerViewBtn = (Button) findViewById(R.id.recycler_view_btn);
+        updateUIBtn =  (Button) findViewById(R.id.update_UI_btn);
+        jump_to_service_btn =  (Button) findViewById(R.id.jump_to_service_btn);
         setOnclickListener();
     }
     private void setOnclickListener(){
@@ -56,12 +57,10 @@ public class MainActivity extends AppCompatActivity {
         diyTitleBtn.setOnClickListener(onclick);
         popBtn.setOnClickListener(onclick);
         listViewBtn.setOnClickListener(onclick);
-        startServiceBtn.setOnClickListener(onclick);
-        stopServiceBtn.setOnClickListener(onclick);
-        bindServiceBtn.setOnClickListener(onclick);
-        unBindServiceBtn.setOnClickListener(onclick);
         myFragmentBtn.setOnClickListener(onclick);
         recyclerViewBtn.setOnClickListener(onclick);
+        updateUIBtn.setOnClickListener(onclick);
+        jump_to_service_btn.setOnClickListener(onclick);
     }
 
     @Override
@@ -112,11 +111,10 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "OnDestory");
     }
 
-    private class OnClick implements View.OnClickListener{
+    private class OnClick implements View.OnClickListener {
         @Override
         public void onClick(View view) {
             Intent intent = null;
-            Intent serviceIntent = new Intent(MainActivity.this, MyService.class);
             switch (view.getId()){
                 case R.id.na_btn:
                     Toast.makeText(getApplicationContext(), "跳转到正常活动",Toast.LENGTH_SHORT).show();
@@ -150,22 +148,13 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "跳转到List View 页面",Toast.LENGTH_SHORT).show();
                     intent = new Intent(MainActivity.this, ListViewButtonsActivity.class);
                     break;
-                case R.id.start_service_btn:
+                case R.id.update_UI_btn:
+                    Toast.makeText(getApplicationContext(), "跳转到List View 页面",Toast.LENGTH_SHORT).show();
+                    intent = new Intent(MainActivity.this, UpdateUIActivity.class);
+                    break;
+                case R.id.jump_to_service_btn:
                     Toast.makeText(getApplicationContext(), "启动服务",Toast.LENGTH_SHORT).show();
-
-                    startService(serviceIntent);
-                    break;
-                case R.id.stop_service_btn:
-                    Toast.makeText(getApplicationContext(), "停止服务",Toast.LENGTH_SHORT).show();
-                    stopService(serviceIntent);
-                    break;
-                case R.id.bind_service_btn:
-                    Toast.makeText(getApplicationContext(), "绑定服务",Toast.LENGTH_SHORT).show();
-                    stopService(serviceIntent);
-                    break;
-                case R.id.unbind_service_btn:
-                    Toast.makeText(getApplicationContext(), "解绑服务",Toast.LENGTH_SHORT).show();
-                    stopService(serviceIntent);
+                    intent = new Intent(MainActivity.this, ServiceMainActivity.class);
                     break;
                 case R.id.my_fragment_btn:
                     Toast.makeText(getApplicationContext(), "跳转到fragment界面",Toast.LENGTH_SHORT).show();
@@ -184,4 +173,5 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
 }

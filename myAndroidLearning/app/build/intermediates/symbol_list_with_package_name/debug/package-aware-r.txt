@@ -797,6 +797,7 @@ id bind_service_btn
 id blocking
 id bottom
 id buttonPanel
+id cancel_download
 id center
 id center_horizontal
 id center_vertical
@@ -832,6 +833,7 @@ id diy_dialog_tv_confirm
 id diy_dialog_tv_msg
 id diy_dialog_tv_title
 id diy_title_btn
+id downLoader_btn
 id edit_query
 id end
 id expand_activities_button
@@ -862,6 +864,7 @@ id input_text
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id jump_to_service_btn
 id left
 id left_fragment
 id left_fragment_btn
@@ -903,6 +906,7 @@ id on
 id packed
 id parent
 id parentPanel
+id pause_download
 id percent
 id pop_btn
 id pop_tv_1
@@ -941,6 +945,8 @@ id search_voice_btn
 id select_dialog_listview
 id send
 id send_msg_btn
+id service_etdata
+id service_tvOut
 id shortcut
 id showCustom
 id showHome
@@ -968,11 +974,14 @@ id standard
 id standard_start
 id standard_start_btn
 id start
+id start_download
+id start_intent_service_btn
 id start_model_btn
 id start_service_btn
 id stop_service_btn
 id submenuarrow
 id submit_area
+id syn_data_btn
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -999,6 +1008,9 @@ id unbind_service_btn
 id unchecked
 id uniform
 id up
+id update_UI_btn
+id update_ui_btn
+id update_ui_tv
 id useLogo
 id vertical_recycler_view_btn
 id visibility_layout
@@ -1052,6 +1064,7 @@ layout activity_chat_box
 layout activity_container
 layout activity_dialog
 layout activity_diy
+layout activity_downloader_main
 layout activity_first
 layout activity_fruit_list_view
 layout activity_life_cycle_test_buttons
@@ -1069,12 +1082,14 @@ layout activity_recycler_horizental_view
 layout activity_recycler_vertical_view
 layout activity_recycler_water_fall_view
 layout activity_recyler_view_buttons
+layout activity_service_main
 layout activity_simple_list_view
 layout activity_single_instance
 layout activity_single_task_activtity
 layout activity_single_top
 layout activity_standard_start
 layout activity_two_part_fragment
+layout activity_update_ui
 layout another_right_fragment
 layout custom_dialog
 layout fruit_view_item
@@ -1533,3 +1548,4 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml network_security_config

@@ -115,6 +115,15 @@
                     android:textAllCaps="false"
                     android:background="@drawable/button_click"
                     android:layout_marginTop="5dp"/>
+
+                <Button
+                    android:id="@+id/update_UI_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="jump to update UI"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_click"
+                    android:layout_marginTop="5dp"/>
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
@@ -133,40 +142,13 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginLeft="5dp">
                 <Button
-                    android:id="@+id/start_service_btn"
+                    android:id="@+id/jump_to_service_btn"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
-                    android:text="Start Service"
+                    android:text="jump tp service"
                     android:textAllCaps="false"
                     android:background="@drawable/button_click"
                     />
-
-                <Button
-                    android:id="@+id/stop_service_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text="Stop Service"
-                    android:textAllCaps="false"
-                    android:background="@drawable/button_click"
-                    android:layout_marginTop="5dp"/>
-
-                <Button
-                    android:id="@+id/bind_service_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text="Bind Service"
-                    android:textAllCaps="false"
-                    android:background="@drawable/button_click"
-                    android:layout_marginTop="5dp"/>
-                <Button
-                    android:id="@+id/unbind_service_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text="Unbind Service"
-                    android:textAllCaps="false"
-                    android:background="@drawable/button_click"
-                    android:layout_marginTop="5dp"/>
-
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

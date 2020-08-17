@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+    <TextView
+        android:id="@+id/service_tvOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/service_etdata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        android:hint="输入数据"/>
+
+    <Button
+        android:id="@+id/start_service_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Start Service"
+        android:textAllCaps="false"
+        android:background="@drawable/button_click"
+        />
+
+    <Button
+        android:id="@+id/stop_service_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Stop Service"
+        android:textAllCaps="false"
+        android:background="@drawable/button_click"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/bind_service_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Bind Service"
+        android:textAllCaps="false"
+        android:background="@drawable/button_click"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/unbind_service_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Unbind Service"
+        android:textAllCaps="false"
+        android:background="@drawable/button_click"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/syn_data_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Synchronize data"
+        android:textAllCaps="false"
+        android:background="@drawable/button_click"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/start_intent_service_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Start Intent Service"
+        android:textAllCaps="false"
+        android:background="@drawable/button_click"
+        android:layout_marginTop="5dp"/>
+
+    <Button
+        android:id="@+id/downLoader_btn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="DownLoader"
+        android:textAllCaps="false"
+        android:background="@drawable/button_click"
+        android:layout_marginTop="5dp"/>
+
+</LinearLayout>
