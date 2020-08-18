@@ -786,6 +786,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id aidl_service_btn
 id alertTitle
 id all
 id always
@@ -974,10 +975,12 @@ id standard
 id standard_start
 id standard_start_btn
 id start
+id start_anotherApp_service_btn
 id start_download
 id start_intent_service_btn
 id start_model_btn
 id start_service_btn
+id stop_anotherApp_service_btn
 id stop_service_btn
 id submenuarrow
 id submit_area
@@ -1059,6 +1062,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_aidl_service_main
 layout activity_alert_dialog
 layout activity_chat_box
 layout activity_container

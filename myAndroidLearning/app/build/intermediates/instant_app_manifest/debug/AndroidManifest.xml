@@ -24,6 +24,13 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <service
+            android:name="com.example.myandroidlearning.ServiceLearning.Service_AIDL.MyAIDLService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.myandroidlearning.ServiceLearning.Service_AIDL.AIDLServiceMainActivity" />
+
+        <service
             android:name="com.example.myandroidlearning.ServiceLearning.MyIntentService"
             android:enabled="true"
             android:exported="true" />

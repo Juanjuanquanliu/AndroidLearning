@@ -21,9 +21,10 @@ import android.widget.Toast;
 import com.example.myandroidlearning.R;
 import com.example.myandroidlearning.ServiceLearning.DownLoadTask.DownLoadMainActivity;
 import com.example.myandroidlearning.ServiceLearning.MultiThreading.UpdateUIActivity;
+import com.example.myandroidlearning.ServiceLearning.Service_AIDL.AIDLServiceMainActivity;
 
 public class ServiceMainActivity extends AppCompatActivity implements ServiceConnection {
-    private Button startServiceBtn,stopServiceBtn, bindServiceBtn, unBindServiceBtn,downLoaderBtn, synDataBtn, startIntentServiceBtn;
+    private Button startServiceBtn,stopServiceBtn, bindServiceBtn, unBindServiceBtn,downLoaderBtn, synDataBtn, startIntentServiceBtn, aidlServiceBtn;
     private EditText etData;
     private TextView tvOut;
     private MyService.myBlinder mBlinder;
@@ -47,6 +48,7 @@ public class ServiceMainActivity extends AppCompatActivity implements ServiceCon
         synDataBtn = (Button) findViewById(R.id.syn_data_btn);
         tvOut = (TextView) findViewById(R.id.service_tvOut);
         startIntentServiceBtn = (Button) findViewById(R.id.start_intent_service_btn);
+        aidlServiceBtn  = (Button) findViewById(R.id.aidl_service_btn);
         setOnclickListener();
     }
 
@@ -59,6 +61,7 @@ public class ServiceMainActivity extends AppCompatActivity implements ServiceCon
         downLoaderBtn.setOnClickListener(onclick);
         synDataBtn.setOnClickListener(onclick);
         startIntentServiceBtn.setOnClickListener(onclick);
+        aidlServiceBtn.setOnClickListener(onclick);
     }
     private class OnClick implements View.OnClickListener {
         @Override
@@ -103,6 +106,9 @@ public class ServiceMainActivity extends AppCompatActivity implements ServiceCon
                     Intent intentService = new Intent(ServiceMainActivity.this, MyIntentService.class);
                     startService(intentService);
                     break;
+                case R.id.aidl_service_btn:
+                    Toast.makeText(getApplicationContext(), "跳转到AIDLService",Toast.LENGTH_SHORT).show();
+                    intent = new Intent(ServiceMainActivity.this, AIDLServiceMainActivity.class);
                 default:
                     break;
             }
