@@ -8,8 +8,11 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="30" />
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
 
     <application
         android:allowBackup="true"
@@ -22,6 +25,35 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <receiver
+            android:name="com.example.myandroidlearning.BroadCast.MyBroadCastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name="com.example.myandroidlearning.BroadCast.BootCompleteReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+
+                <data android:scheme="file" >
+                </data>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.example.myandroidlearning.BroadCast.BroadCastMainActivity" />
+
+        <service
+            android:name="com.example.myandroidlearning.ServiceLearning.Service_AIDL.MyAIDLService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.example.myandroidlearning.ServiceLearning.Service_AIDL.AIDLServiceMainActivity" />
+
         <service
             android:name="com.example.myandroidlearning.ServiceLearning.MyIntentService"
             android:enabled="true"

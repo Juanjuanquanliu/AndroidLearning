@@ -2,6 +2,7 @@ package com.example.myandroidlearning;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.IntentSender;
@@ -17,6 +18,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.example.myandroidlearning.ActivityLifeCycleTest.ActivityLifeCycleTestButtons;
+import com.example.myandroidlearning.BroadCast.BroadCastMainActivity;
 import com.example.myandroidlearning.DIY.DIYActivity;
 import com.example.myandroidlearning.Fragment.NewsFragment.NewsMainActivity;
 import com.example.myandroidlearning.ServiceLearning.MyService;
@@ -26,7 +28,8 @@ import com.example.myandroidlearning.Views.ListView.ListViewButtonsActivity;
 import com.example.myandroidlearning.Views.RecyclerView.RecylerViewButtonsActivity;
 
 public class MainActivity extends AppCompatActivity {
-    private Button normal, dialog,progressBarBtn, progressDialogBtn,startModleBtn,diyTitleBtn, popBtn,listViewBtn,myFragmentBtn, recyclerViewBtn, updateUIBtn,jump_to_service_btn;
+    private Button normal, dialog,progressBarBtn, progressDialogBtn,startModleBtn,diyTitleBtn, popBtn,listViewBtn,myFragmentBtn, recyclerViewBtn;
+    private Button updateUIBtn,jump_to_service_btn,jump_to_boradcast_btn;
     private static final String TAG = "MainActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewBtn = (Button) findViewById(R.id.recycler_view_btn);
         updateUIBtn =  (Button) findViewById(R.id.update_UI_btn);
         jump_to_service_btn =  (Button) findViewById(R.id.jump_to_service_btn);
+        jump_to_boradcast_btn = (Button) findViewById(R.id.jump_to_boradcast_btn);
         setOnclickListener();
     }
     private void setOnclickListener(){
@@ -61,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerViewBtn.setOnClickListener(onclick);
         updateUIBtn.setOnClickListener(onclick);
         jump_to_service_btn.setOnClickListener(onclick);
+        jump_to_boradcast_btn.setOnClickListener(onclick);
     }
 
     @Override
@@ -164,6 +169,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.recycler_view_btn:
                     Toast.makeText(getApplicationContext(), "跳转到RecyclerView界面",Toast.LENGTH_SHORT).show();
                     intent = new Intent(MainActivity.this, RecylerViewButtonsActivity.class);
+                    break;
+                case R.id.jump_to_boradcast_btn:
+                    Toast.makeText(getApplicationContext(), "跳转到广播界面",Toast.LENGTH_SHORT).show();
+                    intent = new Intent(MainActivity.this, BroadCastMainActivity.class);
                     break;
                 default:
                     break;

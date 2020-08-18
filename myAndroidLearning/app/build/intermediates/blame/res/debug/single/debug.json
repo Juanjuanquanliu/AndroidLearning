@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/drawable_apple.jpeg.flat",
-        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/drawable/apple.jpeg"
-    },
-    {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_background.png.flat",
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/drawable_apple.jpeg.flat",
+        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/drawable/apple.jpeg"
     },
     {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
@@ -64,20 +64,20 @@
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/activity_fruit_list_view.xml"
     },
     {
-        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_my_fragment2.xml.flat",
-        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/my_fragment2.xml"
-    },
-    {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_activity_qualifies_fragment.xml.flat",
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/activity_qualifies_fragment.xml"
     },
     {
-        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_my_fragment2.xml.flat",
+        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/my_fragment2.xml"
     },
     {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout-large_activity_qualifies_fragment.xml.flat",
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout-large/activity_qualifies_fragment.xml"
+    },
+    {
+        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/drawable_left_chat_box.9.png.flat",
@@ -92,12 +92,12 @@
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/drawable/turn_left.png"
     },
     {
-        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
-    },
-    {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/drawable_button_click.xml.flat",
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/drawable/button_click.xml"
+    },
+    {
+        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
     },
     {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_activity_two_part_fragment.xml.flat",
@@ -136,24 +136,24 @@
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/drawable/button_rectangle.xml"
     },
     {
-        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout-sw600dp_activity_news_main.xml.flat",
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout-sw600dp/activity_news_main.xml"
+    },
+    {
+        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/xml_network_security_config.xml.flat",
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/xml/network_security_config.xml"
     },
     {
-        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_activity_service_main.xml.flat",
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/activity_service_main.xml"
+    },
+    {
+        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_activity_downloader_main.xml.flat",
@@ -162,6 +162,10 @@
     {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_right_fragment.xml.flat",
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/right_fragment.xml"
+    },
+    {
+        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_activity_broad_cast_main.xml.flat",
+        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/activity_broad_cast_main.xml"
     },
     {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_activity_my_dialog.xml.flat",
@@ -176,12 +180,12 @@
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
-        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/activity_main.xml"
-    },
-    {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/drawable_right_chat_box.9.png.flat",
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/drawable/right_chat_box.9.png"
+    },
+    {
+        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
+        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/activity_main.xml"
     },
     {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/drawable_orange.jpg.flat",
@@ -192,12 +196,12 @@
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/drawable/grape.jpg"
     },
     {
-        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/drawable_strawberry.jpg.flat",
-        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/drawable/strawberry.jpg"
-    },
-    {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_news_item.xml.flat",
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/news_item.xml"
+    },
+    {
+        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/drawable_strawberry.jpg.flat",
+        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/drawable/strawberry.jpg"
     },
     {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_activity_pop_up_window.xml.flat",
@@ -312,6 +316,10 @@
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/drawable/watermelon.jpg"
     },
     {
+        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_activity_aidl_service_main.xml.flat",
+        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/activity_aidl_service_main.xml"
+    },
+    {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_title.xml.flat",
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/title.xml"
     },
@@ -320,12 +328,12 @@
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/msg_item.xml"
     },
     {
-        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_news_content_frag.xml.flat",
         "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/layout/news_content_frag.xml"
+    },
+    {
+        "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/ts/Documents/AndroidStudio/myAndroidLearning/app/build/intermediates/res/merged/debug/layout_my_fragment.xml.flat",

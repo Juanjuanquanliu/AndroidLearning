@@ -202,7 +202,7 @@ myAdapter继承RecyclerView.Adapter<myAdapter.ViewHolder>，这也意味着myAda
 
 适配器根据设备来决定是采用哪种显示方式。
 
-# 2020.08.14
+# 2020.08.17
 ## 学习内容
 ### 1. Service深入学习 
 
@@ -281,4 +281,35 @@ Service的生命周期主要onCreate、 onStartCommond、onDestory三个函数�
 
 - 下载主活动 (DownLoadMainActivity) ：活动；主要是进行按钮操作实现下载。 
 
+# 2020.08.18
+## 学习内容
+### 1. 跨应用Service 
 
+#### 1.1 Intent定义
+
+与之前的Intent使用不同，跨应用需要设置Component，指定所需要跨应用的Service所在包名以及 Service名称。 
+
+之后即可调用startService、stopService、bindService 、unbindService。 
+
+#### 1.2 跨应用Service通信 
+
+主要用到了AIDL和Binder。 
+
+AIDL是Android中IPC（Inter-Process Communication）方式中的一种，AIDL是Android Interface definition language的缩写。主要用于应用之间的传递数据与通信。通信涉及的函数主要在AIDL接口中进行声明，然后一边Service接收，一边发送。AIDL需要同包名的存在于两个需要通信的App中。 
+
+### 2. BroadCast了解 
+
+广播机制主要是为了方便于系统级别的消息通知。 
+
+#### 2.1 标准广播与有序广播 
+
+标准广播是一种完全异步执行的广播，所有广播几乎同时收到消息，这样效率最高同时意味着无法截断。 
+
+有序广播则是一种同步执行的广播，同一时刻只有一个广播接收器可以接受到广播消息，当该广播接收器逻辑结束后，广播消息继续广播，因此广播接收器是有序的，且引入了截断。 
+
+#### 2.2 动态注册与静态注册 
+
+动态注册在代码中声明注册，静态注册则是在xml文件中直接注册
+<receiver></receiver>
+并进行
+<intent-filter> </intent-filter> 

@@ -148,7 +148,19 @@
                     android:text="jump tp service"
                     android:textAllCaps="false"
                     android:background="@drawable/button_click"
-                    />
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp" />
+
+                <Button
+                    android:id="@+id/jump_to_boradcast_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="jump tp boradCast"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_click"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp" />
+
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

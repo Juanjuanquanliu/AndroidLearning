@@ -10,175 +10,239 @@
 9        android:targetSdkVersion="30" />
 9-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-11-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:5:5-77
-11-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:5:22-74
-12    <uses-permission android:name="android.permission.INTERNET" />
-12-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:6:5-83
-12-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:6:22-64
-13
-14    <application
-14-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:7:5-76:19
-15        android:allowBackup="true"
-15-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:9:9-35
-16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.3.0] /home/ts/.gradle/caches/transforms-2/files-2.1/429fb715fcc7711d4ab133e350b6f531/core-1.3.0/AndroidManifest.xml:24:18-86
-17        android:debuggable="true"
-18        android:icon="@mipmap/ic_launcher"
-18-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:10:9-43
-19        android:label="@string/app_name"
-19-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:11:9-41
-20        android:networkSecurityConfig="@xml/network_security_config"
-20-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:8:9-69
-21        android:roundIcon="@mipmap/ic_launcher_round"
-21-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:12:9-54
-22        android:supportsRtl="true"
-22-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:13:9-35
-23        android:testOnly="true"
-24        android:theme="@style/AppTheme" >
-24-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:14:9-40
-25        <service
-25-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:15:9-18:46
-26            android:name="com.example.myandroidlearning.ServiceLearning.MyIntentService"
-26-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:16:13-60
-27            android:enabled="true"
-27-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:18:13-35
-28            android:exported="true" />
-28-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:17:13-36
-29
-30        <activity android:name="com.example.myandroidlearning.ServiceLearning.DownLoadTask.DownLoadMainActivity" />
-30-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:20:9-87
-30-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:20:19-84
-31
-32        <service
-32-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:22:9-25:39
-33            android:name="com.example.myandroidlearning.ServiceLearning.DownLoadTask.DownLoadService"
-33-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:23:13-73
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:5:5-79
+11-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+12-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:6:5-77
+12-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:6:22-74
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:7:5-67
+13-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+14-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:8:5-81
+14-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:8:22-78
+15    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+15-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:9:5-75
+15-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:9:22-72
+16
+17    <application
+17-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:11:5-108:19
+18        android:allowBackup="true"
+18-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:12:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.3.0] /home/ts/.gradle/caches/transforms-2/files-2.1/429fb715fcc7711d4ab133e350b6f531/core-1.3.0/AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:13:9-43
+22        android:label="@string/app_name"
+22-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:14:9-41
+23        android:networkSecurityConfig="@xml/network_security_config"
+23-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:15:9-69
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:16:9-54
+25        android:supportsRtl="true"
+25-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:17:9-35
+26        android:testOnly="true"
+27        android:theme="@style/AppTheme" >
+27-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:18:9-40
+28        <receiver
+28-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:19:9-22:48
+29            android:name="com.example.myandroidlearning.BroadCast.MyBroadCastReceiver"
+29-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:20:13-58
+30            android:enabled="true"
+30-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:21:13-35
+31            android:exported="true" />
+31-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:22:13-36
+32        <receiver
+32-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:23:9-36:20
+33            android:name="com.example.myandroidlearning.BroadCast.BootCompleteReceiver"
+33-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:24:13-59
 34            android:enabled="true"
-34-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:24:13-35
-35            android:exported="true" />
-35-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:25:13-36
-36
-37        <activity android:name="com.example.myandroidlearning.ServiceLearning.ServiceMainActivity" />
-37-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:27:9-73
-37-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:27:19-70
-38        <activity android:name="com.example.myandroidlearning.ServiceLearning.MultiThreading.UpdateUIActivity" />
-38-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:28:9-85
-38-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:28:19-82
-39        <activity android:name="com.example.myandroidlearning.Fragment.NewsFragment.NewsMainActivity" />
-39-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:29:9-76
-39-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:29:19-73
-40        <activity android:name="com.example.myandroidlearning.Fragment.NewsFragment.NewsContentActivity" />
-40-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:30:9-79
-40-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:30:19-76
-41        <activity android:name="com.example.myandroidlearning.Fragment.QualifiesFragmentActivity" />
-41-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:31:9-72
-41-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:31:19-69
-42        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.ChatBox.ChatBoxActivity" />
-42-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:32:9-80
-42-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:32:19-77
-43        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.RecyclerGridViewActivity" />
-43-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:33:9-81
-43-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:33:19-78
-44        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.RecyclerWaterFallViewActivity" />
-44-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:34:9-86
-44-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:34:19-83
-45        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.RecyclerHorizentalViewActivity" />
-45-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:35:9-87
-45-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:35:19-84
-46        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.RecyclerVerticalViewActivity" />
-46-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:36:9-85
-46-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:36:19-82
-47        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.RecylerViewButtonsActivity" />
-47-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:37:9-83
-47-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:37:19-80
-48        <activity android:name="com.example.myandroidlearning.Fragment.twoPartFragmentActivity" />
-48-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:38:9-70
-48-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:38:19-67
-49        <activity android:name="com.example.myandroidlearning.Fragment.ContainerActivity" />
-49-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:39:9-64
-49-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:39:19-61
-50
-51        <service
-51-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:41:9-44:39
-52            android:name="com.example.myandroidlearning.ServiceLearning.MyService"
-52-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:42:13-54
-53            android:enabled="true"
-53-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:43:13-35
-54            android:exported="true" />
-54-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:44:13-36
-55
-56        <activity android:name="com.example.myandroidlearning.Views.ListView.Fruit.FruitListViewActivity" />
-56-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:46:9-80
-56-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:46:19-77
-57        <activity android:name="com.example.myandroidlearning.Views.ListView.SimpleListViewActivity" />
-57-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:47:9-75
-57-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:47:19-72
-58        <activity android:name="com.example.myandroidlearning.Views.ListView.ListViewButtonsActivity" />
-58-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:48:9-76
-58-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:48:19-73
-59        <activity android:name="com.example.myandroidlearning.PopUpWindowActivity" />
-59-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:49:9-57
-59-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:49:19-54
-60        <activity android:name="com.example.myandroidlearning.DIY.DIYActivity" />
-60-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:50:9-53
-60-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:50:19-50
-61        <activity
-61-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:51:9-53:51
-62            android:name="com.example.myandroidlearning.ActivityLifeCycleTest.SingleInstanceActivity"
-62-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:52:13-73
-63            android:launchMode="singleInstance" />
-63-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:53:13-48
-64        <activity
-64-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:54:9-56:47
-65            android:name="com.example.myandroidlearning.ActivityLifeCycleTest.SingleTaskActivtity"
-65-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:55:13-70
-66            android:launchMode="singleTask" />
-66-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:56:13-44
-67        <activity android:name="com.example.myandroidlearning.DialogActivity" />
-67-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:57:9-52
-67-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:57:19-49
-68        <activity android:name="com.example.myandroidlearning.ProgressDialogActivity" />
-68-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:58:9-60
-68-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:58:19-57
-69        <activity android:name="com.example.myandroidlearning.ProgressBarActivity" />
-69-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:59:9-57
-69-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:59:19-54
-70        <activity android:name="com.example.myandroidlearning.AlertDialogActivity" />
-70-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:60:9-57
-70-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:60:19-54
-71        <activity android:name="com.example.myandroidlearning.ActivityLifeCycleTest.ActivityLifeCycleTestButtons" />
-71-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:61:9-88
-71-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:61:19-85
-72        <activity android:name="com.example.myandroidlearning.ActivityLifeCycleTest.TestActivity" />
-72-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:62:9-72
-72-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:62:19-69
-73        <activity
-73-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:63:9-65:46
-74            android:name="com.example.myandroidlearning.ActivityLifeCycleTest.SingleTopActivity"
-74-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:64:13-68
-75            android:launchMode="singleTop" />
-75-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:65:13-43
-76        <activity
-76-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:66:9-68:45
-77            android:name="com.example.myandroidlearning.ActivityLifeCycleTest.StandardStartActivity"
-77-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:67:13-72
-78            android:launchMode="standard" />
-78-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:68:13-42
-79        <activity android:name="com.example.myandroidlearning.MainActivity" >
-79-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:69:9-75:20
-79-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:69:19-47
-80            <intent-filter>
-80-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:70:13-74:29
-81                <action android:name="android.intent.action.MAIN" />
-81-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:71:17-69
-81-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:71:25-66
+34-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:25:13-35
+35            android:exported="true" >
+35-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:26:13-36
+36            <intent-filter>
+36-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:27:13-29:29
+37                <action android:name="android.intent.action.BOOT_COMPLETED" />
+37-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:28:17-79
+37-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:28:25-76
+38            </intent-filter>
+39            <intent-filter>
+39-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:30:13-35:29
+40                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+40-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:31:17-77
+40-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:31:25-75
+41                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+41-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:32:17-79
+41-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:32:25-77
+42
+43                <data android:scheme="file" >
+43-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:33:17-34:24
+43-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:33:23-44
+44                </data>
+45            </intent-filter>
+46        </receiver>
+47
+48        <activity android:name="com.example.myandroidlearning.BroadCast.BroadCastMainActivity" />
+48-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:38:9-69
+48-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:38:19-66
+49
+50        <service
+50-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:40:9-43:39
+51            android:name="com.example.myandroidlearning.ServiceLearning.Service_AIDL.MyAIDLService"
+51-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:41:13-71
+52            android:enabled="true"
+52-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:42:13-35
+53            android:exported="true" />
+53-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:43:13-36
+54
+55        <activity android:name="com.example.myandroidlearning.ServiceLearning.Service_AIDL.AIDLServiceMainActivity" />
+55-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:45:9-90
+55-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:45:19-87
+56
+57        <service
+57-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:47:9-50:39
+58            android:name="com.example.myandroidlearning.ServiceLearning.MyIntentService"
+58-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:48:13-60
+59            android:enabled="true"
+59-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:49:13-35
+60            android:exported="true" />
+60-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:50:13-36
+61
+62        <activity android:name="com.example.myandroidlearning.ServiceLearning.DownLoadTask.DownLoadMainActivity" />
+62-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:52:9-87
+62-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:52:19-84
+63
+64        <service
+64-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:54:9-57:39
+65            android:name="com.example.myandroidlearning.ServiceLearning.DownLoadTask.DownLoadService"
+65-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:55:13-73
+66            android:enabled="true"
+66-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:56:13-35
+67            android:exported="true" />
+67-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:57:13-36
+68
+69        <activity android:name="com.example.myandroidlearning.ServiceLearning.ServiceMainActivity" />
+69-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:59:9-73
+69-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:59:19-70
+70        <activity android:name="com.example.myandroidlearning.ServiceLearning.MultiThreading.UpdateUIActivity" />
+70-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:60:9-85
+70-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:60:19-82
+71        <activity android:name="com.example.myandroidlearning.Fragment.NewsFragment.NewsMainActivity" />
+71-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:61:9-76
+71-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:61:19-73
+72        <activity android:name="com.example.myandroidlearning.Fragment.NewsFragment.NewsContentActivity" />
+72-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:62:9-79
+72-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:62:19-76
+73        <activity android:name="com.example.myandroidlearning.Fragment.QualifiesFragmentActivity" />
+73-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:63:9-72
+73-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:63:19-69
+74        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.ChatBox.ChatBoxActivity" />
+74-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:64:9-80
+74-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:64:19-77
+75        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.RecyclerGridViewActivity" />
+75-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:65:9-81
+75-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:65:19-78
+76        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.RecyclerWaterFallViewActivity" />
+76-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:66:9-86
+76-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:66:19-83
+77        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.RecyclerHorizentalViewActivity" />
+77-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:67:9-87
+77-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:67:19-84
+78        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.RecyclerVerticalViewActivity" />
+78-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:68:9-85
+78-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:68:19-82
+79        <activity android:name="com.example.myandroidlearning.Views.RecyclerView.RecylerViewButtonsActivity" />
+79-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:69:9-83
+79-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:69:19-80
+80        <activity android:name="com.example.myandroidlearning.Fragment.twoPartFragmentActivity" />
+80-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:70:9-70
+80-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:70:19-67
+81        <activity android:name="com.example.myandroidlearning.Fragment.ContainerActivity" />
+81-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:71:9-64
+81-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:71:19-61
 82
-83                <category android:name="android.intent.category.LAUNCHER" />
-83-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:73:17-77
-83-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:73:27-74
-84            </intent-filter>
-85        </activity>
-86    </application>
+83        <service
+83-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:73:9-76:39
+84            android:name="com.example.myandroidlearning.ServiceLearning.MyService"
+84-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:74:13-54
+85            android:enabled="true"
+85-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:75:13-35
+86            android:exported="true" />
+86-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:76:13-36
 87
-88</manifest>
+88        <activity android:name="com.example.myandroidlearning.Views.ListView.Fruit.FruitListViewActivity" />
+88-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:78:9-80
+88-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:78:19-77
+89        <activity android:name="com.example.myandroidlearning.Views.ListView.SimpleListViewActivity" />
+89-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:79:9-75
+89-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:79:19-72
+90        <activity android:name="com.example.myandroidlearning.Views.ListView.ListViewButtonsActivity" />
+90-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:80:9-76
+90-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:80:19-73
+91        <activity android:name="com.example.myandroidlearning.PopUpWindowActivity" />
+91-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:81:9-57
+91-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:81:19-54
+92        <activity android:name="com.example.myandroidlearning.DIY.DIYActivity" />
+92-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:82:9-53
+92-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:82:19-50
+93        <activity
+93-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:83:9-85:51
+94            android:name="com.example.myandroidlearning.ActivityLifeCycleTest.SingleInstanceActivity"
+94-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:84:13-73
+95            android:launchMode="singleInstance" />
+95-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:85:13-48
+96        <activity
+96-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:86:9-88:47
+97            android:name="com.example.myandroidlearning.ActivityLifeCycleTest.SingleTaskActivtity"
+97-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:87:13-70
+98            android:launchMode="singleTask" />
+98-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:88:13-44
+99        <activity android:name="com.example.myandroidlearning.DialogActivity" />
+99-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:89:9-52
+99-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:89:19-49
+100        <activity android:name="com.example.myandroidlearning.ProgressDialogActivity" />
+100-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:90:9-60
+100-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:90:19-57
+101        <activity android:name="com.example.myandroidlearning.ProgressBarActivity" />
+101-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:91:9-57
+101-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:91:19-54
+102        <activity android:name="com.example.myandroidlearning.AlertDialogActivity" />
+102-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:92:9-57
+102-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:92:19-54
+103        <activity android:name="com.example.myandroidlearning.ActivityLifeCycleTest.ActivityLifeCycleTestButtons" />
+103-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:93:9-88
+103-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:93:19-85
+104        <activity android:name="com.example.myandroidlearning.ActivityLifeCycleTest.TestActivity" />
+104-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:94:9-72
+104-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:94:19-69
+105        <activity
+105-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:95:9-97:46
+106            android:name="com.example.myandroidlearning.ActivityLifeCycleTest.SingleTopActivity"
+106-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:96:13-68
+107            android:launchMode="singleTop" />
+107-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:97:13-43
+108        <activity
+108-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:98:9-100:45
+109            android:name="com.example.myandroidlearning.ActivityLifeCycleTest.StandardStartActivity"
+109-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:99:13-72
+110            android:launchMode="standard" />
+110-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:100:13-42
+111        <activity android:name="com.example.myandroidlearning.MainActivity" >
+111-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:101:9-107:20
+111-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:101:19-47
+112            <intent-filter>
+112-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:102:13-106:29
+113                <action android:name="android.intent.action.MAIN" />
+113-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:103:17-69
+113-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:103:25-66
+114
+115                <category android:name="android.intent.category.LAUNCHER" />
+115-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:105:17-77
+115-->/home/ts/Documents/AndroidStudio/myAndroidLearning/app/src/main/AndroidManifest.xml:105:27-74
+116            </intent-filter>
+117        </activity>
+118    </application>
+119
+120</manifest>
