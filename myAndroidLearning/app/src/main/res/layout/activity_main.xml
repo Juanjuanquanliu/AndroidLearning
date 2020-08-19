@@ -124,6 +124,7 @@
                     android:textAllCaps="false"
                     android:background="@drawable/button_click"
                     android:layout_marginTop="5dp"/>
+
             </LinearLayout>
         </ScrollView>
     </LinearLayout>
@@ -161,6 +162,25 @@
                     android:layout_marginTop="5dp"
                     android:layout_marginLeft="5dp" />
 
+                <Button
+                    android:id="@+id/boradcast_force_offline_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Send Force offline broadCasr"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_click"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp" />
+
+                <Button
+                    android:id="@+id/storage_persistence_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="jump to storage persistence"
+                    android:textAllCaps="false"
+                    android:background="@drawable/button_click"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp" />
             </LinearLayout>
         </ScrollView>
     </LinearLayout>

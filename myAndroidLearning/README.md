@@ -58,7 +58,7 @@ Service是多用于后台运行的服务，不需要与用户进行交互，在�
 
 内容还没有深入了解，主要看了下多线程使用，onBind(), onStartCommond()函数。 
 
-# 2020.08.12
+# 2020.08.13
 ## 学习内容
 ### 1. Fragment 
 
@@ -313,3 +313,48 @@ AIDL是Android中IPC（Inter-Process Communication）方式中的一种，AIDL�
 <receiver></receiver>
 并进行
 <intent-filter> </intent-filter> 
+
+# 2020.08.18
+## 学习内容
+### 1.  BroadCast 
+
+#### 1.1 昨日问题解决  
+
+模拟器版本问题，Android8.0以上对于静态注册系统广播做了限制，为了节省电量做出的优化，代码在8.0以下版本正常。 
+
+#### 1.2 自定义广播 
+
+实现标准广播与有序广播，并简单调用了一下截断。
+
+#### 1.3 本地广播机制
+
+主要LocalBroadCastManager，对BroadCastReceiver进行 Intent-fileter 过滤注册。 
+
+#### 1.4 强制下线 
+
+实现了一个强制下线的功能，本地广播与全局广播皆可以，因为只要能够在应用程序内广播到即可。 
+
+此处踩坑，强制下线功能想实现弹窗提醒，但是context是全局context，因此一直报错，所以重构Dialog的构造函数，传入当前context。 
+
+### 2. 数据持久化技术 
+
+广播机制主要是为了方便于系统级别的消息通知。 
+
+#### 2.1 文件存储 
+
+写入：OpenFileOutput + BufferedWriter 
+
+读取：OpenFileInput + BufferedReader　 
+
+#### 2.2 SharedPreferences存储 
+
+三种形式　
+Context getSharedPreferences() 
+
+Activity  getPreferences() 
+
+PreferenceManager getDefaultSharedPreferences() 
+
+#### 2.3 实现一个记住密码的功能 
+
+利用数据持久化技术，可以实现登录直接记住密码的功能 

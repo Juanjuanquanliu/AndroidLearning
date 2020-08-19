@@ -1,4 +1,4 @@
-package com.example.myandroidlearning.BroadCast;
+package com.example.myandroidlearning.BroadCastLearning;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

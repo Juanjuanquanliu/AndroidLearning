@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
 
     <application
         android:allowBackup="true"
@@ -16,26 +15,41 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".StorageLearning.SharePreferencesActivity"></activity>
+        <activity android:name=".StorageLearning.DataPersistenceMainActivity" />
+        <activity android:name=".StorageLearning.FilePesistenceTestActivity" />
+
         <receiver
-            android:name=".BroadCast.MyBroadCastReceiver"
+            android:name=".BroadCastLearning.ForceOffline.ForceOfflineReceiver"
             android:enabled="true"
-            android:exported="true"></receiver>
+            android:exported="true" />
+
+        <activity android:name=".BroadCastLearning.ForceOffline.LoginActivity"></activity>
+
         <receiver
-            android:name=".BroadCast.BootCompleteReceiver"
+            android:name=".BroadCastLearning.MyBroadCastReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="100">
+                <action android:name="com.example.broadcast.MY_BROADCAST" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".BroadCastLearning.BootCompleteReceiver"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
-            <intent-filter >
-                <action android:name="android.intent.action.MEDIA_MOUNTED"/>
-                <action android:name="android.intent.action.MEDIA_UNMOUNTED"/>
-                <data android:scheme="file">
-                </data>
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />
+
+                <data android:scheme="file" />
             </intent-filter>
         </receiver>
 
-        <activity android:name=".BroadCast.BroadCastMainActivity" />
+        <activity android:name=".BroadCastLearning.BroadCastMainActivity" />
 
         <service
             android:name=".ServiceLearning.Service_AIDL.MyAIDLService"
@@ -105,6 +119,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".StorageLearning.StorageLoginActivity" />
     </application>
 
 </manifest>
