@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                  
+
+    
+                 
+                                 
+                                                                       
+           
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/timg" android:tag="layout/activity_login_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/tools">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp">
+            <ImageButton
+                android:id="@+id/down"
+                android:background="@color/colorTransparent"
+                android:src="@drawable/down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:padding="8dp"
+                android:layout_alignRight="@id/inEmail"
+                />
+            <EditText
+                android:id="@+id/inEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="8dp"
+                android:tag="binding_1"                     >
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/inPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inEmail"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:tag="binding_2"                        />
+
+
+            <Button
+                android:id="@+id/logIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/inPassword"
+                android:tag="binding_3"                                  
+                android:text="LOGIN"
+                                                                   />
+
+            <Button
+                android:id="@+id/signUp"
+                android:layout_below="@+id/logIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="binding_4"                                     
+                android:text="SIGN UP"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+         
