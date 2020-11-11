@@ -55,8 +55,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_below="@+id/inPassword"
                 android:onClick="@{()-> loginViewModel.onLoginClicked()}"
-                android:text="LOGIN"
-                bind:toastMessage="@{loginViewModel.toastMessage}" />
+                android:text="LOGIN" />
 
             <Button
                 android:id="@+id/signUp"

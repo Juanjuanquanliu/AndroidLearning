@@ -1,4 +1,4 @@
-#Fri Oct 23 13:42:20 CST 2020
+#Fri Oct 30 17:28:14 CST 2020
 base.0=/home/ts/Documents/AndroidStudio/AndroidLearning/MvvmLearning/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-                                                  
+                                                 
+                                                        
 
     
                  
@@ -12,23 +13,13 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/timg" android:tag="layout/activity_login_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/tools">
+        android:background="@drawable/timg" android:tag="layout/activity_login_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bind="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_margin="8dp">
-            <ImageButton
-                android:id="@+id/down"
-                android:background="@color/colorTransparent"
-                android:src="@drawable/down"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:padding="8dp"
-                android:layout_alignRight="@id/inEmail"
-                />
             <EditText
                 android:id="@+id/inEmail"
                 android:layout_width="match_parent"
@@ -38,8 +29,14 @@
                 android:padding="8dp"
                 android:tag="binding_1"                     >
             </EditText>
-
-
+            <com.example.mvvmlearning.ui.AccountSpinner
+                android:id="@+id/account_spinner"
+                android:background="@color/colorTransparent"
+                android:src="@drawable/down"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:accountPosition="1"
+                />
             <EditText
                 android:id="@+id/inPassword"
                 android:layout_width="match_parent"
@@ -58,8 +55,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_below="@+id/inPassword"
                 android:tag="binding_3"                                  
-                android:text="LOGIN"
-                                                                   />
+                android:text="LOGIN" />
 
             <Button
                 android:id="@+id/signUp"

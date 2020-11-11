@@ -14,7 +14,7 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.down, 5);
+        sViewsWithIds.put(R.id.account_spinner, 5);
     }
     // views
     @NonNull
@@ -106,8 +106,8 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
         this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
     }
     private ActivityLoginBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
-        super(bindingComponent, root, 3
-            , (android.widget.ImageButton) bindings[5]
+        super(bindingComponent, root, 2
+            , (com.example.mvvmlearning.ui.AccountSpinner) bindings[5]
             , (android.widget.EditText) bindings[1]
             , (android.widget.EditText) bindings[2]
             , (android.widget.Button) bindings[3]
@@ -129,7 +129,7 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
     @Override
     public void invalidateAll() {
         synchronized(this) {
-                mDirtyFlags = 0x10L;
+                mDirtyFlags = 0x8L;
         }
         requestRebind();
     }
@@ -159,7 +159,7 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
     public void setLoginViewModel(@Nullable com.example.mvvmlearning.viewmodel.LoginViewModel LoginViewModel) {
         this.mLoginViewModel = LoginViewModel;
         synchronized(this) {
-            mDirtyFlags |= 0x8L;
+            mDirtyFlags |= 0x4L;
         }
         notifyPropertyChanged(BR.loginViewModel);
         super.requestRebind();
@@ -172,8 +172,6 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
                 return onChangeLoginViewModelUserEmail((androidx.lifecycle.MutableLiveData<java.lang.String>) object, fieldId);
             case 1 :
                 return onChangeLoginViewModelUserPassword((androidx.lifecycle.MutableLiveData<java.lang.String>) object, fieldId);
-            case 2 :
-                return onChangeLoginViewModelToastMessage((androidx.lifecycle.MutableLiveData<java.lang.String>) object, fieldId);
         }
         return false;
     }
@@ -195,15 +193,6 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
         }
         return false;
     }
-    private boolean onChangeLoginViewModelToastMessage(androidx.lifecycle.MutableLiveData<java.lang.String> LoginViewModelToastMessage, int fieldId) {
-        if (fieldId == BR._all) {
-            synchronized(this) {
-                    mDirtyFlags |= 0x4L;
-            }
-            return true;
-        }
-        return false;
-    }
 
     @Override
     protected void executeBindings() {
@@ -212,18 +201,16 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
             dirtyFlags = mDirtyFlags;
             mDirtyFlags = 0;
         }
-        java.lang.String loginViewModelToastMessageGetValue = null;
         androidx.lifecycle.MutableLiveData<java.lang.String> loginViewModelUserEmail = null;
         androidx.lifecycle.MutableLiveData<java.lang.String> loginViewModelUserPassword = null;
-        androidx.lifecycle.MutableLiveData<java.lang.String> loginViewModelToastMessage = null;
         java.lang.String loginViewModelUserPasswordGetValue = null;
         java.lang.String loginViewModelUserEmailGetValue = null;
         com.example.mvvmlearning.viewmodel.LoginViewModel loginViewModel = mLoginViewModel;
 
-        if ((dirtyFlags & 0x1fL) != 0) {
+        if ((dirtyFlags & 0xfL) != 0) {
 
 
-            if ((dirtyFlags & 0x19L) != 0) {
+            if ((dirtyFlags & 0xdL) != 0) {
 
                     if (loginViewModel != null) {
                         // read loginViewModel.userEmail
@@ -237,7 +224,7 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
                         loginViewModelUserEmailGetValue = loginViewModelUserEmail.getValue();
                     }
             }
-            if ((dirtyFlags & 0x1aL) != 0) {
+            if ((dirtyFlags & 0xeL) != 0) {
 
                     if (loginViewModel != null) {
                         // read loginViewModel.userPassword
@@ -251,28 +238,14 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
                         loginViewModelUserPasswordGetValue = loginViewModelUserPassword.getValue();
                     }
             }
-            if ((dirtyFlags & 0x1cL) != 0) {
-
-                    if (loginViewModel != null) {
-                        // read loginViewModel.toastMessage
-                        loginViewModelToastMessage = loginViewModel.getToastMessage();
-                    }
-                    updateLiveDataRegistration(2, loginViewModelToastMessage);
-
-
-                    if (loginViewModelToastMessage != null) {
-                        // read loginViewModel.toastMessage.getValue()
-                        loginViewModelToastMessageGetValue = loginViewModelToastMessage.getValue();
-                    }
-            }
         }
         // batch finished
-        if ((dirtyFlags & 0x19L) != 0) {
+        if ((dirtyFlags & 0xdL) != 0) {
             // api target 1
 
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.inEmail, loginViewModelUserEmailGetValue);
         }
-        if ((dirtyFlags & 0x10L) != 0) {
+        if ((dirtyFlags & 0x8L) != 0) {
             // api target 1
 
             androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.inEmail, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, inEmailandroidTextAttrChanged);
@@ -280,15 +253,10 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
             this.logIn.setOnClickListener(mCallback1);
             this.signUp.setOnClickListener(mCallback2);
         }
-        if ((dirtyFlags & 0x1aL) != 0) {
+        if ((dirtyFlags & 0xeL) != 0) {
             // api target 1
 
             androidx.databinding.adapters.TextViewBindingAdapter.setText(this.inPassword, loginViewModelUserPasswordGetValue);
-        }
-        if ((dirtyFlags & 0x1cL) != 0) {
-            // api target 1
-
-            com.example.mvvmlearning.common.AppAdapters.toastMessage(this.logIn, loginViewModelToastMessageGetValue);
         }
     }
     // Listener Stub Implementations
@@ -336,9 +304,8 @@ public class ActivityLoginBindingImpl extends ActivityLoginBinding implements co
     /* flag mapping
         flag 0 (0x1L): loginViewModel.userEmail
         flag 1 (0x2L): loginViewModel.userPassword
-        flag 2 (0x3L): loginViewModel.toastMessage
-        flag 3 (0x4L): loginViewModel
-        flag 4 (0x5L): null
+        flag 2 (0x3L): loginViewModel
+        flag 3 (0x4L): null
     flag mapping end*/
     //end
 }

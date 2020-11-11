@@ -6,20 +6,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import com.example.mvvmlearning.R;
+import com.example.mvvmlearning.ui.AccountSpinner;
 import com.example.mvvmlearning.viewmodel.LoginViewModel;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class ActivityLoginBinding extends ViewDataBinding {
   @NonNull
-  public final ImageButton down;
+  public final AccountSpinner accountSpinner;
 
   @NonNull
   public final EditText inEmail;
@@ -37,9 +37,10 @@ public abstract class ActivityLoginBinding extends ViewDataBinding {
   protected LoginViewModel mLoginViewModel;
 
   protected ActivityLoginBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageButton down, EditText inEmail, EditText inPassword, Button logIn, Button signUp) {
+      AccountSpinner accountSpinner, EditText inEmail, EditText inPassword, Button logIn,
+      Button signUp) {
     super(_bindingComponent, _root, _localFieldCount);
-    this.down = down;
+    this.accountSpinner = accountSpinner;
     this.inEmail = inEmail;
     this.inPassword = inPassword;
     this.logIn = logIn;
